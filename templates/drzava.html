@@ -1,0 +1,23 @@
+{% include "header.html" %}
+    <title>{{ drzava[0] }}</title>
+</head>
+<body>
+        {% include "zaglavlje.html" %}
+        <div class="drzava-naziv">{{ drzava[0] }}</div>
+        <div class="drzava-kontinent">{{ drzava[6] }}</div>
+        <div class="drzava-levo">
+            <img src="{{ drzava[2] }}">
+            <br>
+            <a href="{{ drzava[5] }}" target="_blank">Wikipedija</a>
+            <br>
+            <a href="{{ url_for('kontinent', kont=drzava[6]) }}">🡄 Povratak</a>
+        </div>
+        <div class="podaci">
+            <div class="osnovni-podaci">Osnovni podaci:</div>
+            <div class="podatak">Površina: <span class="vrednost">{{ drzava[3] }} km&#xb2;</span></div>
+            <div class="podatak">Stanovništvo: <span class="vrednost">{{ drzava[4] }}</span></div>
+            <div class="podatak">Glavni grad: <span class="vrednost">{{ drzava[1] }}</span></div>
+        </div>
+    </div>
+</body>
+</html>

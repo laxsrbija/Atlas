@@ -1,0 +1,27 @@
+{% include "header.html" %}
+    <title>Atlas</title>
+</head>
+<body>
+        {% include "zaglavlje.html" %}
+        <div id="map-continents">
+            <ul class="continents">
+                <li class="c1"><a href="Afrika">Afrika</a></li>
+                <li class="c2"><a href="Azija">Azija</a></li>
+                <li class="c3"><a href="Australija">Australija</a></li>
+                <li class="c4"><a href="Evropa">Evropa</a></li>
+                <li class="c5"><a href="Severna Amerika">Severna Amerika</a></li>
+                <li class="c6"><a href="Južna Amerika">Južna Amerika</a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#map-continents").CSSMap({
+                "size": 850,
+                "tooltips": false,
+                "responsive": {}
+            });
+        });
+    </script>
+</body>
+</html>

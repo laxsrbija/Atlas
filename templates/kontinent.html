@@ -1,0 +1,27 @@
+{% include "header.html" %}
+    <title>{{ kont }}</title>
+</head>
+<body>
+        {% include "zaglavlje.html" %}
+        <h1>{{ kont }}</h1>
+        {% if (drzave|length|string)[-1] == "1" and (drzave|length|string)|length != 2 %}
+            {% set nastavak = "u" %}
+        {% elif ((drzave|length|string)[-1])|int < 5 and (drzave|length|string)|length == 1 %}
+            {% set nastavak = "e" %}
+        {% else %}
+            {% set nastavak = "a" %}
+        {% endif %}
+        <h2>Kontinent sadrži {{ drzave|length }} držav{{ nastavak }}</h2>
+        <a class="povratak" href="{{ url_for('index') }}">🡄 Povratak na početnu</a>
+        <div class="drzave">
+            {% for drzava in drzave %}
+                <a href="{{ url_for('drzava', drz=drzava[0], kont=kont) }}">
+                    <img src="{{ drzava[1] }}">
+                    <span>{{ drzava[0] }}</span>
+                </a>
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

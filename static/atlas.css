@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin-ext');
+
+body {
+    background-color: #888888;
+    font-family: "Roboto", sans-serif;
+}
+
+.atlas {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1000px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #333333;
+    overflow: hidden;
+    min-height: 700px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.zaglavlje {
+    background-color: #5a6384;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    border-bottom: 3px solid #bfb1b1;
+}
+
+.zaglavlje img {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.zaglavlje div {
+    color: white;
+    position: absolute;
+    left: 170px;
+    font-size: 72px;
+    font-weight: 700;
+    top: 30px;
+}
+
+.zaglavlje span {
+    color: white;
+    position: absolute;
+    right: 40px;
+}
+
+.podnaslov {
+    font-size: 32px;
+    top: 40px;
+}
+
+.autor {
+    font-size: 28px;
+    top: 80px;
+    font-weight: 300;
+}
+
+#map-continents {
+    margin-top: 55px;
+}
+
+h1 {
+    font-size: 42px;
+    padding-left: 70px;
+    padding-top: 10px;
+    color: #565656;
+}
+
+h2 {
+    font-size: 32px;
+    padding-left: 70px;
+    margin-top: -25px;
+    color: #565656;
+    font-weight: 300;
+}
+
+.povratak {
+    position: absolute;
+    top: 225px;
+    right: 70px;
+    background-color: #5a6384;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+}
+
+.drzave {
+    padding-left: 70px;
+    padding-top: 30px;
+}
+
+.drzave a {
+    width: 860px;
+    height: 80px;
+    display: inline-block;
+    background-color: #cccccc;
+    border: 1px solid #bfb1b1;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.drzave a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 80px;
+}
+
+.drzave a span {
+    position: absolute;
+    font-size: 42px;
+    font-weight: 700;
+    color: #565656;
+    left: 200px;
+    top: 12px;
+}
+
+.drzava-naziv {
+    position: absolute;
+    font-size: 42px;
+    color: #565656;
+    font-weight: 700;
+    left: 370px;
+    top: 220px;
+}
+
+.drzava-kontinent {
+    position: absolute;
+    font-size: 36px;
+    color: #565656;
+    font-weight: 300;
+    left: 370px;
+    top: 270px;
+}
+
+.drzava-levo {
+    position: absolute;
+    top: 220px;
+    left: 60px;
+}
+
+.drzava-levo img {
+    width: 250px;
+    border-radius: 3px;
+    border: 1px solid #bfb1b1;
+}
+
+.drzava-levo a {
+    margin: 15px 0 0 0;
+    display: inline-block;
+    background-color: #5a6384;
+    width: 210px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.osnovni-podaci {
+    color: #565656;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.podaci {
+    position: absolute;
+    top: 350px;
+    left: 370px;
+}
+
+.podatak {
+    text-transform: uppercase;
+    color: #565656;
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.vrednost {
+    font-weight: 400;
+    color: #777777;
+    padding-left: 10px;
+    text-transform: none;
+}
