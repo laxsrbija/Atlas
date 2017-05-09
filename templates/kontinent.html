@@ -12,7 +12,7 @@
             {% set nastavak = "a" %}
         {% endif %}
         <h2>Kontinent sadrži {{ drzave|length }} držav{{ nastavak }}</h2>
-        <a class="povratak" href="{{ url_for('index') }}">🡄 Povratak na početnu</a>
+        <a class="povratak" href="{{ url_for('index') }}">&#x1F844; Povratak na početnu</a>
         <div class="drzave">
             {% for drzava in drzave %}
                 <a href="{{ url_for('drzava', drz=drzava[0], kont=kont) }}">
